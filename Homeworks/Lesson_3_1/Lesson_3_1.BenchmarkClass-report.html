@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>Lesson_3_1.BenchmarkClass-20210228-180051</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.12.1, OS=Windows 10.0.18363.1379 (1909/November2018Update/19H2)
+Intel Core i7-8750H CPU 2.20GHz (Coffee Lake), 1 CPU, 12 logical and 6 physical cores
+.NET Core SDK=5.0.103
+  [Host]     : .NET Core 5.0.3 (CoreCLR 5.0.321.7212, CoreFX 5.0.321.7212), X64 RyuJIT
+  DefaultJob : .NET Core 5.0.3 (CoreCLR 5.0.321.7212, CoreFX 5.0.321.7212), X64 RyuJIT
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>               Method</th><th>Mean</th><th>Error</th><th>StdDev</th>
+</tr>
+</thead><tbody><tr><td>Test_Standart_Class</td><td>21.06 ns</td><td>0.058 ns</td><td>0.054 ns</td>
+</tr><tr><td>Test_Standart_Struct_Float</td><td>21.79 ns</td><td>0.082 ns</td><td>0.077 ns</td>
+</tr><tr><td>Test_Standart_Struct_Double</td><td>22.44 ns</td><td>0.114 ns</td><td>0.096 ns</td>
+</tr><tr><td>Test_NoRoot_Struct_Float</td><td>27.60 ns</td><td>0.152 ns</td><td>0.135 ns</td>
+</tr></tbody></table>
+</body>
+</html>
