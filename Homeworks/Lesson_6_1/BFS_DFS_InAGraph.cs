@@ -18,6 +18,7 @@ namespace Lesson_6_1
             Console.WriteLine("Breadth First Search:");
             searchService.BreadthFirstSearch(bfsGraph, searchService.PrintNodeVertexIntoConsole);
             Console.WriteLine("Нажмите любую клавишу для завершения программы");
+            Console.ReadKey();
         }
 
         public void DepthFirstSearchRecursion(INode nodeToStartIn, Action<INode> actionWhileSearching)
