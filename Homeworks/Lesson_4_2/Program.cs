@@ -32,7 +32,7 @@ namespace Lesson_4_2
             {
                 case 1:
                     Random rnd = new Random();
-                    _tree = new Tree(rnd.Next(20, 50));
+                    _tree = new Tree(rnd.Next(20, 50), 20);
                     PrintTree();
                     break;
                 case 2:

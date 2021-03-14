@@ -5,6 +5,7 @@ namespace Lesson_4_2
     public class Vertex
     {
         public int Value { get; set; }
+        public int Height { get; set; }
         public Vertex Left { get; set; }
         public Vertex Right { get; set; }
         public Vertex Root { get; set; }
